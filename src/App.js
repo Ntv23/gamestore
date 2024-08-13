@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
-import AppRoutes from './routes/AppRoutes.js';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AppRoutes from './routes/AppRoutes';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import Chat from './components/Chat.js';
+import Chat from './components/Chat';
 
 
 function App() {

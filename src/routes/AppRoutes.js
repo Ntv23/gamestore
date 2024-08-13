@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home.js";
-import About from "../pages/About.js";
-import Products from "../pages/Products.js";
-import Cart from "../pages/Cart.js";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Products from "../pages/Products";
+import Cart from "../pages/Cart";
 
 const AppRoutes = () => {
   return (

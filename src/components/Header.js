@@ -4,8 +4,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "../../src/assets/logo.png";
-import ModalLogin from "./ModalLogin.js";
-import ModalResetPassword from "./ModalResetPassword.js";
+import ModalLogin from "./ModalLogin";
+import ModalResetPassword from "./ModalResetPassword";
 import { getAuth, signOut } from "firebase/auth";
 
 const navigation = [

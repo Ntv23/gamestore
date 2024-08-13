@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import bg from "../assets/bg.png";
 import cd2 from "../assets/cd1.png";
-import ProductSlider from "../components/ProductSlider.js";
+import ProductSlider from "../components/ProductSlider";
 import { FaPlaystation } from "react-icons/fa6";
 import { IoGameController } from "react-icons/io5";
 import { MdContactSupport } from "react-icons/md";

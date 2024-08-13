@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { sendPasswordResetEmail } from "firebase/auth";
-import { auth } from "../Firebase/firebaseConfig.js";
+import { auth } from "../Firebase/firebaseConfig";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
