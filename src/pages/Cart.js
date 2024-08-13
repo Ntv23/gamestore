@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../components/Card";
+import Card from "../components/Card.js";
 import QrImg from "../assets/qr.png";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";

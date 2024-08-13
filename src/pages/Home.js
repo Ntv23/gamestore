@@ -1,8 +1,8 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Card from "../components/Card";
-import ProductSlider from "../components/ProductSlider";
+import Card from "../components/Card.js";
+import ProductSlider from "../components/ProductSlider.js";
 import { motion } from "framer-motion";
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import ModalRegister from "./ModalRegister";
+import ModalRegister from "./ModalRegister.js";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {

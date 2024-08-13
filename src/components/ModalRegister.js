@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc, doc, getDoc } from "firebase/firestore";
-import { auth, db } from "../Firebase/firebaseConfig";
+import { auth, db } from "../Firebase/firebaseConfig.js";
 
 export default function ModalRegister({ isOpen, onClose }) {
   if (!isOpen) return null;

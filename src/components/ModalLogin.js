@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
-import { auth, db } from "../Firebase/firebaseConfig";
+import { auth, db } from "../Firebase/firebaseConfig.js";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MdAttachEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
-import RatingStars from "../components/RatingStars";
+import RatingStars from "../components/RatingStars.js";
 
 const About = () => {
   const [formData, setFormData] = useState({
