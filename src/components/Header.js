@@ -3,6 +3,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import logo from "../../src/assets/logo.png";
 import ModalLogin from "./ModalLogin";
 import ModalResetPassword from "./ModalResetPassword";
@@ -48,9 +49,9 @@ export default function Header({ username }) {
           className="flex items-center justify-between p-4 lg:px-8 bg-black shadow-md shadow-gray-50"
         >
           <div className="flex lg:flex-1">
-            <a href="/home" className="-m-1.5 p-1.5">
+            <Link to="/home" className="-m-1.5 p-1.5">
               <img alt="Logo" src={logo} className="h-12 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -63,7 +64,7 @@ export default function Header({ username }) {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <motion.a
+              <motion.div
                 whileHover={{
                   scale: 1.1,
                   color: "gray",
@@ -71,11 +72,12 @@ export default function Header({ username }) {
                 }}
                 transition={{ type: "spring", stiffness: 300 }} //hiệu ứng chuyển tiếp
                 key={item.name}
-                href={item.href}
                 className="p-4 text-lg font-Orbitron leading-6 text-gray-400 rounded-full"
               >
-                {item.name}
-              </motion.a>
+                <Link to={item.href} className="text-gray-400">
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -83,12 +85,12 @@ export default function Header({ username }) {
             {username ? (
               <div className="flex items-center space-x-4">
                 <FaShoppingCart className="text-gray-500" />
-                <a
-                  href="/cart"
+                <Link
+                  to="/cart"
                   className="text-lg font-Orbitron leading-6 text-gray-400 hover:text-gray-300"
                 >
                   Cart |
-                </a>
+                </Link>
                 <span
                   className="text-lg font-Orbitron leading-6 text-red-700"
                   onClick={openChangePassword}
@@ -140,13 +142,13 @@ export default function Header({ username }) {
               <div className="-my-6 divide-y">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-Orbitron leading-7 text-gray-400 hover:bg-gray-400 hover:text-black"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">
@@ -158,12 +160,12 @@ export default function Header({ username }) {
                       >
                         Hello! {username}
                       </span>
-                      <a
-                        href="/cart"
+                      <Link
+                        to="/cart"
                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-Orbitron leading-7 text-gray-400 hover:bg-gray-400 hover:text-black flex justify-between items-center"
                       >
                         <span>Cart</span>
-                      </a>
+                      </Link>
                       <button
                         onClick={handleLogout}
                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-Orbitron leading-7 text-gray-400 hover:bg-gray-400 hover:text-black"
@@ -214,5 +216,5 @@ export default function Header({ username }) {
         onResetClose={closeChangePassword}
       />
     </div>
-  );
+  )
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -68,19 +69,20 @@ export default function ProductSlider() {
       {products.map((product, index) => (
         <div key={index} className="p-2">
           <div className="w-full max-w-lg shadow-lg bg-transparent">
-            <a href="/products">
+            <Link to="/products">
               <img
                 className="rounded-2xl w-full transition-all duration-300 transform hover:scale-90 hover:border-4 hover:border-gray-300"
                 src={product.img}
+                alt={product.name}
               />
-            </a>
+            </Link>
           </div>
           <div className="p-2">
-            <a href="/products">
+            <Link to="/products">
               <h5 className="text-lg font-kanit font-light tracking-tight text-gray-300 transition-transform duration-300 transform hover:scale-105 hover:text-gray-100">
                 {product.name}
               </h5>
-            </a>
+            </Link>
             <p className="text-md font-kanit font-medium text-gray-200 transition-transform duration-300 transform hover:scale-105 hover:text-gray-50">
               {product.price}
             </p>
@@ -88,5 +90,5 @@ export default function ProductSlider() {
         </div>
       ))}
     </Slider>
-  );
+  )
 }
