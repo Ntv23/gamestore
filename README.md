@@ -25,6 +25,7 @@ Check out the live demo: [TV Game Store](https://tvgamestore.netlify.app/home)
 - **Deployment**: ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white) Deployed on Netlify for fast and reliable web hosting.
 
 ## Previews
+![My Project Screenshot](Previews/home.jpg)
 
 
 Feel free to explore the project and provide feedback. For more information or to contribute, please visit the repository.
