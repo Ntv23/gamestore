@@ -7,19 +7,19 @@ Check out the live demo: [TV Game Store](https://tvgamestore.netlify.app/home)
 
 ## Technologies Used
 
-React.js: 
+#React.js: 
  For building the user interface and managing state.
-Tailwind CSS: 
+#Tailwind CSS: 
  For styling the application with a focus on responsiveness.
-Firebase: 
+#Firebase: 
  For user authentication and database management.
-Framer Motion: 
+#Framer Motion: 
  For adding animations and transitions to the UI.
-React Slick: 
+#React Slick: 
  For creating responsive carousels and sliders.
-Tawk.to: 
+#Tawk.to: 
  For embedding live chat support into the application.
-Netlify: 
+#Netlify: 
  For deploying the application and managing continuous integration.
 
 
