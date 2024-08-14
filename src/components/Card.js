@@ -91,7 +91,7 @@ export default function Card() {
             ease: "easeInOut", // easing smooting animation
           }}
         >
-          <img src={spider} className="w-full mt-5" />
+          <img src={spider} className="w-full mt-10" />
         </motion.div>
       </div>
     </div>
