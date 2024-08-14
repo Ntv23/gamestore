@@ -44,6 +44,7 @@ export default function ProductSlider() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -52,6 +53,7 @@ export default function ProductSlider() {
           slidesToScroll: 2,
           infinite: true,
           dots: false,
+          arrows: false,
         },
       },
       {
@@ -59,6 +61,7 @@ export default function ProductSlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          arrows: false,
         },
       },
     ],
