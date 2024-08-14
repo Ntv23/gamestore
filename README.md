@@ -24,9 +24,8 @@ Check out the live demo: [TV Game Store](https://tvgamestore.netlify.app/home)
 - **Tailwind CSS Styling**: ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white) Responsive and modern UI design with Tailwind CSS.  
 - **Deployment**: ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white) Deployed on Netlify for fast and reliable web hosting.
 
-## Previews
-![My Project Screenshot](Previews/home.jpg)
+## Feel free to explore the project and provide feedback. For more information or to contribute, please visit the repository.
 
 
-Feel free to explore the project and provide feedback. For more information or to contribute, please visit the repository.
+
 
