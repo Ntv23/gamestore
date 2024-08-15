@@ -4,6 +4,7 @@ This project is a modern React.js web application
 
 ## Live Demo
 Check out the live demo: [TV Game Store](https://tvgamestore.netlify.app/home)
+![preview](https://github.com/user-attachments/assets/723b95fc-9c30-4692-adf7-6346fc44b9a8)
 
 ## Technologies Used
 
